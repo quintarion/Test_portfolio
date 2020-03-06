@@ -1,0 +1,22 @@
+{
+  "name": "p3_01_githubrepo",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quintarion/P3_01_githubrepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quintarion/P3_01_githubrepo/issues"
+  },
+  "homepage": "https://github.com/quintarion/P3_01_githubrepo#readme",
+  "dependencies": {
+    "@mdi/font": "^4.9.95"
+  }
+}

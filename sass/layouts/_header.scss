@@ -1,0 +1,17 @@
+@import "../utils/function";
+@import "../utils/variable";
+@import "../utils/mixin";
+
+header {
+    @include flexCenter(row nowrap);
+    background-color: $--color-secondary;
+    color: $--color-five;
+    
+    :hover {
+        color: $--color-fourth;
+    }
+
+    .light {
+        @include theme($light-theme: true); //mixin - I dont know wy it doesn't working ;(
+    }
+}

@@ -1,0 +1,25 @@
+// :root {
+//     --primary-color: yellow;
+//     --accent-color: orange;
+//     --text-color: grey;
+// }
+
+// VARIABLES 
+$--color-primary: transparent;
+$--color-secondary: #212121;
+$--color-third: #5a2ca9;
+$--color-fourth: #2962ff;
+$--color-five: #b9b9b9;
+
+// MAP
+$font-weights: (
+    "regular": 400, //what unity ?
+    "medium": 500,
+    "bold": 2000
+);
+
+$font-size: (
+    "small": 1em,
+    "medium": 2em,
+    "large": 3em,
+);

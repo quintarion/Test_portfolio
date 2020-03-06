@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAAC;EACN,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,OAAO;EACnB,eAAe,EAAE,OAAO;EACxB,kBAAkB,EAAE,OAAO;CAC9B;;AAED,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,KAAK;CACnB;;AAED,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,UAAU;EACtB,eAAe,EAAE,UAAU;EAC3B,kBAAkB,EAAE,UAAU;CAEjC;;ADYD,AAAA,KAAK,CAAC;EAdF,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,cAAc,EAYM,MAAM;EAG1B,gBAAgB,EW5BF,OAAO;CXoDxB;;AA5BD,AAUI,KAVC,CAUD,YAAY,CAAC;EAfT,UAAU,EAAE,KAA+B;EAC3C,KAAK,EAAE,KAAgC;CAgB1C;;AAZL,AAeI,KAfC,CAeD,gBAAgB,CAAA;EACZ,SAAS,EW3BJ,GAAG;EX6BR,WAAW,EWnCJ,GAAG;EXoCV,gBAAgB,EWzCR,IAAI;EX0CZ,KAAK,EW5CK,OAAO;CXmDpB;;AA3BL,AAsBQ,KAtBH,CAeD,gBAAgB,AAOX,MAAM,CAAC;EACJ,KAAK,EW5CA,aAAa;EX6ClB,WAAW,EWvCX,IAAI;EXwCJ,SAAS,EWlCR,GAAG;CXmCP",
+    "sources": [
+        "main.scss",
+        "base/_base.scss",
+        "base/_typography.scss",
+        "components/_button.scss",
+        "layouts/_container.scss",
+        "layouts/_footer.scss",
+        "layouts/_header.scss",
+        "pages/_about.scss",
+        "pages/_home.scss",
+        "pages/_portfolio.scss",
+        "utils/_function.scss",
+        "utils/_variable.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

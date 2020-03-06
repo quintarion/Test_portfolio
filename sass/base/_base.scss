@@ -1,0 +1,30 @@
+@import "../utils/variable";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; // Opera/IE 8+
+    -moz-box-sizing: inherit; // Firefox, autres Gecko
+    -webkit-box-sizing: inherit; // Safari/Chrome, others WebKit 
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box; // Opera/IE 8+
+    -moz-box-sizing: border-box; // Firefox, autres Gecko
+    -webkit-box-sizing: border-box; // Safari/Chrome, others WebKit 
+    background: $--color-primary;
+    vertical-align: baseline;
+    letter-spacing: .1px;
+}

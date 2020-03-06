@@ -1,0 +1,9 @@
+@import "../utils/mixin";
+
+.nav {
+    @include flexCenter(row nowrap);
+
+    &__link {
+        padding: 1em;
+    }
+}
