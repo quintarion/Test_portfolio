@@ -1,9 +1,100 @@
 @import "../utils/mixin";
 
-.nav {
-    @include flexCenter(row nowrap);
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+    // &__logo {
+    //     transition-timing-function: cubic-bezier(.42, 0, .58, 1);
+    // }
 
-    &__link {
-        padding: 1em;
+@media screen and (min-width: 800px) {
+    nav {
+
+        input {
+            display: none;
+        }
+
+        .nav {
+            @include flexCenter(row nowrap);
+            width: 50vw;
+            //transition-timing-function: cubic-bezier(.42, 0, .58, 1);
+            
+            &__link {
+                display: inline !important;
+                padding: .5em;
+            }
+        }
     }
 }
+
+// MENU BURGER
+
+@media screen and (max-width: 799px) {
+nav {
+    .nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: $--color-secondary;
+        transform: translateX(100%);
+        transition: transform 0.8s ease;
+
+        &__link {
+            padding-top: 50px; 
+        }
+    }
+
+    input {
+        display: none;
+    }
+    
+    label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+        padding: 10px;
+        //background: white;
+        border: 2px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    label span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $--color-five;
+        margin: 4px 0;
+    }  
+    
+    ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    input:checked + label + .nav {
+        transform: translateX(0);
+    }
+}
+}
+  
+  
+  
+  
+  
+
+  
+  

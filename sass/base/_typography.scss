@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+@import "../utils/variable";
 
 body {
     font-family: 'Space Mono', monospace;
     //color: $--color-primary;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 100;
     line-height: 1.7;
+}
+
+button {
+    font-family: 'Space Mono', monospace;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.75rem;
+}
+
+figure {
+    color: $--color-secondary;
+    font-size: small;
 }
 
 h1 {
@@ -15,9 +29,10 @@ h1 {
     font-style: italic;
 }
 
-button {
-    font-family: 'Space Mono', monospace;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 2.75rem;
+p {
+    font-family: 'Darker Grotesque', sans-serif;
 }
+
+// button {
+//     font-family: small;
+// }

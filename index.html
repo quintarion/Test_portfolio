@@ -7,88 +7,106 @@
 
     <!-- LINKS TO CSS FILE ("STYLESHEET") AND SITE ICON -->
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet"> 
     
     <!-- DEVICES & BROWSERS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Marion Quintana's Portfolio | Front End Developer</title>
+    <title>Home| Front End Developer</title>
 </head>
 <body>
+    <div class="home">
     <header class="header light">
         <h1 class="header__logo">
-            Dev
+            <img src="../public/img/dev_logo.png" alt=""/>
         </h1>
         <nav>
-            <ul class="nav">
+            <input type="checkbox" id="toggle"/>
+            <label for="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+            <div class="nav">
+            <ul>
                 <li class="nav__link nav__link--active">Home</li>
-                <li class="nav__link"><a href="./public/page/about.html">About</a></li>
-                <li class="nav__link"><a href="./public/page/portfolio.html">Portfolio</a></li>
+                <li class="nav__link"><a href="about.html">About</a></li>
+                <li class="nav__link"><a href="portfolio.html">Portfolio</a></li>
             </ul>
-        </nav>
-        <div class="icons">
-            <a href="https://github.com/quintarion" target="_blank"><i class="fas fa-envelope-square"></i></a> 
-            <a href="https://github.com/quintarion" target="_blank"><i class="fab fa-github-square"></i></span></a>
-            <a href="https://github.com/quintarion" target="_blank"><i class="fab fa-linkedin"></i></a> 
+            <ul>
+                <li><a href="https://github.com/quintarion" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
+                <li><a href="https://github.com/quintarion" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="https://github.com/quintarion" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
         </div>
+        </nav>
+
     </header>
  
-    <main class="main">
+    <main class="main" id="top_page">
     <section class="face">
         <figure class="face__picture">
-            <img src="https://placekitten.com/350/530" alt="" id="top_page" class="face__img"/>
+            <!-- <img src="./public/img/face.png" alt="" id="top_page" class="face__img"/> -->
         </figure>
-        <div face="face__text">
-            <div class="face__dark">
-                <div class="face__desc">
-                    <h2 class="face__title">Dreamer</h2>
-                    <p class="face__paragraph">Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est, ut ne quis concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit. Mihi autem non minori curae est, qualis res publica post mortem meam futura, quam qualis hodie sit.</p>
-                </div>
+        <div class="face__dark">
+            <div class="face__desc">
+                <h2 class="face__title">Dreamer</h2>
+                <p class="face__paragraph">Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est, ut ne quis concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit. Mihi autem non minori curae est, qualis res publica post mortem meam futura, quam qualis hodie sit.</p>
             </div>
-            <div class="face__light">
-                <div class="face__desc">
-                    <h2>Developer</h2>
-                    <p class="face__paracgraph">Voici l’exemple en action du code ci-dessus.<br />
-                        Nous avons un peu de <span data-descr="collection de mots et de ponctuation">texte</span> 
-                        ici avec quelques <span data-descr="petites fenêtres surgissantes qui se cachent aussi">
-                        bulles d’information</span>.<br />
-                        Ne soyez pas timide, survolez le texte pour jeter un <span data-descr="à ne pas prendre au sens littéral">œil</span>.
-                    </p>
-                </div>
+        </div>
+        <div class="face__light">
+            <div class="face__desc">
+                <h2>Developer</h2>
+                <p class="face__paragraph">
+                    My name is Marion Quintana and i'm a font-end developer. 
+                    I like to write in React and Node.js, but I can knowing plenty of other languages & frameworks. If you need a freelancer for an existing project, or to start something from scratch, feel free to contact me.
+
+                    Voici l’exemple en action du code ci-dessus.<br />
+                    Nous avons un peu de <span data-descr="collection de mots et de ponctuation">texte</span> 
+                    ici avec quelques <span data-descr="petites fenêtres surgissantes qui se cachent aussi">
+                    bulles d’information</span>.<br />
+                    Ne soyez pas timide, survolez le texte pour jeter un <span data-descr="à ne pas prendre au sens littéral">œil</span>.
+                </p>
             </div>
         </div>
     </section>
 
-    <section>
-        <h3>Some of my latest work</h3>
-            <div>
-                <figure>
-                    <img src="https://placekitten.com/240/260" alt="" />
-                    <figucation>Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est, ut ne quis concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit. Mihi autem non minori curae est, qualis res publica post mortem meam futura, quam qualis hodie sit.</figucation>
-                </figure>
-                <figure>
-                    <img src="https://placekitten.com/240/260" alt="" />
-                    <figucation>Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est, ut ne quis concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit. Mihi autem non minori curae est, qualis res publica post mortem meam futura, quam qualis hodie sit.</figucation>
-                </figure>
-                <figure>
-                    <img src="https://placekitten.com/240/260" alt="" />
-                    <figucation>Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est, ut ne quis concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit. Mihi autem non minori curae est, qualis res publica post mortem meam futura, quam qualis hodie sit.</figucation>
-                </figure>
-            </div>
+    <section class="preview">
+        <div class="preview__title">
+            <span></span><h3>Some of my latest work</h3><span></span>
+        </div>
+        <div class="preview__content">
+            <!--show 3 random portfolio posts-->
+            <figure>
+                <img src="../public/img/wireframe.jpg" alt="" />
+                <figucation><h4>Quare talis improborum consensio</h4><br/>non modo excusatione amicitiae.</figucation>
+            </figure>
+            <figure>
+                <img src="https://placekitten.com/240/260" alt="" />
+                <figucation><h4>Quare talis improborum consensio non modo</h4><br/>excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est,</figucation>
+            </figure>
+            <figure>
+                <img src="https://placekitten.com/240/260" alt="" />
+                <figucation><h4>Quare talis improborum consensio non modo</h4><br/>excusatione amicitiae.</figucation>
+            </figure>
+        </div>
     </section>
     </main>
     
-    <footer>
-        <button class="btn btn--outline btn--disabled"><a href="#top_page">Go Top</a></button>
-        <div>
+    <footer class="footer">
+        <button class="btn btn--outline btn--disabled"><a href="#top_page">TOP</a></button>
+        <div class=footer__content>
             <p>copyright-2020</p>
                 <ul>
                     <li class="nav__link nav__link--active"><a href="#top_page">Home</a></li>
                     <li class="nav__link"><a href="./public/page/about.html">About</a></li>
                     <li class="nav__link"><a href="./public/page/portfolio.html">Portfolio</a></li>
                 </ul>
+                <a href="https://github.com/quintarion" target="_blank"><i class="fab fa-github-square"></i></span></a>
         </div>
     </footer>
+    </div>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 </body>
 </html>

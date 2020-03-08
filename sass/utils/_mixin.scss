@@ -1,5 +1,9 @@
 @import "./variable";
 
+// SHADOW
+@mixin shadow {
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.2);
+}
 
 // LIGHT THEME
 @mixin theme($light-theme: true) {
@@ -17,8 +21,25 @@
 }
 
 @mixin face ($position, $zindex) {
-    //width: 100vw;
-    //height: 100vw;
     position: $position;
     z-index: $zindex;
+}
+
+@mixin desc {
+    padding: 3em;
+}
+
+// TYPOGRAPHY
+
+@mixin typography {
+    color: $--color-primary;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+// ANIMATION
+
+@mixin easeOut {
+    transition: all .6s cubic-bezier(0.23, 1, 0.32, 1);
 }

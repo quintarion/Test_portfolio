@@ -6,9 +6,34 @@ header {
     @include flexCenter(row nowrap);
     background-color: $--color-secondary;
     color: $--color-five;
-    
-    :hover {
-        color: $--color-fourth;
+    padding: 1.5%;
+    height: 14vh;
+
+    img {
+        width: 10%;
+        // ANIMATION
+        //transition: transform 1000ms ease-in-out;
+        //@include easeOut;
+
+        &--rotDegrees {
+            transform: rotate(-360deg);
+            transition: transform 500ms ease-in-out;
+        }
+        &--rotTurns {
+            background: pink;
+            transform: rotate(-1turn);
+            transition: transform 500ms ease-in-out;
+        }
+    }
+
+    // :hover {
+    //     color: $--color-fourth;
+    // }
+
+    .nav {
+        li {
+            display: inline;
+        }
     }
 
     .light {

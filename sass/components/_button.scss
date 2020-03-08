@@ -1,16 +1,69 @@
+@import "../utils/variable";
+
+// .btn {
+//     border-radius: 10rem;
+//     display: inline-block;
+//     cursor: pointer;
+//     margin: 0 auto;
+//     background: $--color-primary;
+//     padding: 1rem;
+
+//     // HOVER ANIMATION - Getting from point A to point B: transitions -
+//     transform: scale(1);
+//     transition-property: transform;
+//     transition-duration: 1000ms;
+//     &:hover {
+//         transform: scale(1.15);
+//         //transition: margin-top 2s .5s;
+//     }
+
+//     &--disabled {
+//         background: $--color-secondary;
+//     }
+
+//     &--outline {
+//         background: transparent;
+//         border: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+//     }
+// }
+
 .btn {
-    display: inline-block;
-    margin: 0 auto;
-    background: #15DEA5;
-    padding: 1rem;
-    &--disabled {
-        background: grey;
+    // TRIANGLE
+    width: 0;
+    height: 0;
+    border-left: 3rem solid transparent;
+    border-right: 3rem solid transparent;
+    border-bottom: 4rem solid $--color-logo;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    font-size: small;
+
+    // HOVER ANIMATION 
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
+    
+    &:hover {
+       transform: scale(1.15);    
     }
-    &--outline {
-        background: transparent;
-        border: 2px solid #15DEA5;
-        &.btn--disabled{
-            border: 2px solid grey;
-        }
-    }
+
+    // CENTER ELEMENT IN THE PAGE 
+    margin-left: auto;
+    margin-right: auto;
+
+    // ::before {
+    //     content: "TOP";
+    //     font-size: small;
+    // }
+
+    // &--disabled {
+    //    background: $--color-secondary;
+    // }
+
+    // &--outline {
+    //     background: transparent;
+    //     border: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    // }
 }

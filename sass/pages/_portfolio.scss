@@ -1,0 +1,50 @@
+.portfolio {
+    padding-top: 14vh;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        //background-color: red;
+    }
+
+    figure {
+        @include flexCenter(column nowrap);
+        width: calc(100vw/4);
+        margin: .75em;
+        padding: .75em;
+        @include shadow;
+
+        // HOVER ANIMATION 
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 1000ms;
+    
+        &:hover {
+        transform: scale(1.15);    
+        }
+    }
+
+    img {
+        object-fit: cover;
+        height: 13vw;
+        width: 23vw;
+        opacity: .5;
+        -moz-opacity : .5; 
+    }
+
+    img:hover {
+        opacity: 1 !important;
+    }
+
+    figucation {
+        height: 8vw;
+        width: 23vw;
+        overflow: hidden;
+    } 
+
+}

@@ -3,32 +3,119 @@
 
 .face {
     display: grid;
-    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
-    
+    grid-template: 89vh/ 1fr 1fr;
+    padding-top: 10vh;
+
+    @media screen and (max-width: 799px) {
+        display: block;
+    }
+
     &__picture {
         @include flexCenter(row nowrap);
-        background-color: red;
+        background-color: transparent;
         grid-row: 1 / 3;
         grid-column: 1 / 3;
+        z-index: 1;
+        opacity: .5;
+
+        // ANIMATION
+        transition: transform 450ms, background-color 300ms 150ms;
+        transition-delay: 0, 150ms;
+        &:hover {
+            transform: scale(1.13);
+            background: url("../public/img/face.png") no-repeat;
+            background-position: right;
+            background-size: 29vw;
+        }
     }
 
     &__img {
         margin: auto;
     }
 
-    &__text {  // ?
-        display: flex;
-        flex-flow: row nowrap;
-        background-color: orangered;
+    &__dark { 
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+        text-align: left;
+        background-image: url("../public/img/milkyway.jpg"); //Photo by Greg Rakozy on Unsplash
+        background-size: cover;
+        opacity: 0.85;
+        color: $--color-five;
+        @include desc;
+        mix-blend-mode: hard-light;
+    }
 
-        #{&}face__dark { // ?
-            grid-row: 1 / 3;
-            grid-column: 1 / 2;
+    &__light { 
+        grid-row: 1 / 3;
+        grid-column: 2 / 3;
+        text-align: right;
+        @include desc;
+
+        // &:hover { 
+        //     background-image: url("../public/img/draw.jpg");
+        //     background-size: cover;
+            
+        // }
+    }
+}
+
+.preview {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 65vh;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &__title {
+        height: 1px;
+        background:#DDD;
+        border-bottom: $--color-five solid 1px;
+        margin-bottom: 10vh;
+
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: $--color-primary;
+            margin: 4px 0;
         }
 
-        #{&}face_light { // ?
-            grid-row: 1 / 3;
-            grid-column: 2 / 3;
+        h3 {
+            text-align: center;
         }
+    }
+
+    &__content {
+        @include flexCenter(row nowrap);
+        justify-content: center;
+        margin: auto;
+
+        figure {
+            @include flexCenter(column nowrap);
+            width: calc(100vw/4);
+            margin: .75em;
+            padding: .75em;
+            @include shadow; 
+
+
+            img {
+                object-fit: cover;
+                height: 13vw;
+                width: 23vw;
+                opacity: .5;
+                -moz-opacity : .5; 
+
+            }
+
+            img:hover {
+                opacity: 1 !important;
+            }
+        }
+
+        figucation {
+            height: 8vw;
+            width: 23vw;
+            overflow: hidden;
+        } 
     }
 }
