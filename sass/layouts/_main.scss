@@ -4,28 +4,17 @@
 .face {
     display: grid;
     grid-template: 89vh/ 1fr 1fr;
-    padding-top: 10vh;
 
     @media screen and (max-width: 799px) {
         display: block;
-    }
 
-    &__picture {
-        @include flexCenter(row nowrap);
-        background-color: transparent;
-        grid-row: 1 / 3;
-        grid-column: 1 / 3;
-        z-index: 1;
-        opacity: .5;
-
-        // ANIMATION
-        transition: transform 450ms, background-color 300ms 150ms;
-        transition-delay: 0, 150ms;
-        &:hover {
-            transform: scale(1.13);
-            background: url("../public/img/face.png") no-repeat;
-            background-position: right;
-            background-size: 29vw;
+        &__dark {
+        background-image: url("../public/img/milkyway.jpg"); //Photo by Greg Rakozy on Unsplash
+        background-size: cover;
+        opacity: 0.85;
+        color: $--color-five;
+        @include desc;
+        mix-blend-mode: hard-light;
         }
     }
 
@@ -37,12 +26,9 @@
         grid-row: 1 / 3;
         grid-column: 1 / 2;
         text-align: left;
-        background-image: url("../public/img/milkyway.jpg"); //Photo by Greg Rakozy on Unsplash
-        background-size: cover;
-        opacity: 0.85;
-        color: $--color-five;
+        color: white;
         @include desc;
-        mix-blend-mode: hard-light;
+        z-index: 10;
     }
 
     &__light { 
@@ -50,53 +36,59 @@
         grid-column: 2 / 3;
         text-align: right;
         @include desc;
-
-        // &:hover { 
-        //     background-image: url("../public/img/draw.jpg");
-        //     background-size: cover;
-            
-        // }
     }
 }
 
 .preview {
-    display: flex;
-    flex-flow: column nowrap;
-    height: 65vh;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: 3em;
 
     &__title {
         height: 1px;
-        background:#DDD;
-        border-bottom: $--color-five solid 1px;
-        margin-bottom: 10vh;
-
-        span {
-            display: block;
-            height: 2px;
-            width: 100%;
-            background-color: $--color-primary;
-            margin: 4px 0;
-        }
+        background: $--color-logo;
+        border-bottom:#FFF solid 1px;
+        margin-bottom: 30px;
+        position: relative;
 
         h3 {
             text-align: center;
+            background:#FFF;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            margin-left: -150px;
+            width: 300px;
+            text-align: center;
+            display: block;
+            color:$--color-logo;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-size: 1.4rem;
+            font-weight: normal;
+            letter-spacing: 1px;
+            padding: 0px;
         }
     }
 
-    &__content {
-        @include flexCenter(row nowrap);
-        justify-content: center;
-        margin: auto;
+        .preview__img {
+            display: flex;
 
-        figure {
-            @include flexCenter(column nowrap);
-            width: calc(100vw/4);
-            margin: .75em;
-            padding: .75em;
-            @include shadow; 
-
+            figure {
+                @include flexCenter(column nowrap);
+                width: calc(100vw/4);
+                //margin: .75em;
+                padding: .75em;
+                @include shadow;
+                margin: auto;
+        
+                // HOVER ANIMATION 
+                transform: scale(1);
+                transition-property: transform;
+                transition-duration: 1000ms;
+            
+                &:hover {
+                transform: scale(1.15);    
+                }
+            }
 
             img {
                 object-fit: cover;
@@ -104,18 +96,92 @@
                 width: 23vw;
                 opacity: .5;
                 -moz-opacity : .5; 
+            }
+        
+            img:hover {
+                opacity: 1;
+            }
+        
+            figucation {
+                height: 8vw;
+                width: 23vw;
+                overflow: hidden;
+            } 
+        
+        }
 
+}
+
+@media screen and (max-width: 799px) {
+    .preview {
+
+        &__img {
+            flex-direction: column;
+            justify-content: center;
+
+            figure {
+                width: 50vw !important;
+                height: 50vw;
+                margin-top: 2em !important;
             }
 
-            img:hover {
+            img {
+                width: 40vw !important;
+                height: 35vw !important;
                 opacity: 1 !important;
             }
         }
+    
+        img:hover {
+            opacity: none;
+        }
+    
+        figure:hover {
+            transform: none;    
+        }
+    } 
+}
 
-        figucation {
-            height: 8vw;
-            width: 23vw;
-            overflow: hidden;
-        } 
+// DESKTOP ANIMATION
+
+@media screen and (min-width: 800px) {
+
+    @keyframes move {
+        0% {
+        left: 640px;
+
+        // BACKGROUND
+        background: url("../public/img/milkyway.jpg") no-repeat center; //Photo by Greg Rakozy on Unsplash
+        -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+        background-size: cover; /* version standardisée */
+        opacity: 0.85;
+        color: $--color-five;
+        @include desc;
+        mix-blend-mode: hard-light;
+        }
+        50% {
+        left: 320px;
+        }
+        100% {
+        left: 0;
     }
+  } 
+  
+  .box {
+    position: absolute;
+    left: -60vw;
+    width: 50vw;
+    height: 40vw;
+
+    // BACKGROUND
+    background: url("../public/img/milkyway.jpg") no-repeat center; //Photo by Greg Rakozy on Unsplash
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    opacity: 0.85;
+    //@include desc;
+    mix-blend-mode: hard-light;
+
+    //ANIMATION
+    animation:move 800ms forwards linear 2s 3 alternate;
+  }
 }

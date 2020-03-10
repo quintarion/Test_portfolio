@@ -1,14 +1,5 @@
 @import "../utils/mixin";
 
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-}
-    // &__logo {
-    //     transition-timing-function: cubic-bezier(.42, 0, .58, 1);
-    // }
-
 @media screen and (min-width: 800px) {
     nav {
 
@@ -30,22 +21,42 @@ header {
 }
 
 // MENU BURGER
-
 @media screen and (max-width: 799px) {
 nav {
     .nav {
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         height: 100vh;
         width: 100%;
         background: $--color-secondary;
         transform: translateX(100%);
         transition: transform 0.8s ease;
+        font-size: 25px;
+        // &__link {
+        //     padding-top: 50px; 
+        // }
 
-        &__link {
-            padding-top: 50px; 
+        &__topic {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            bottom: 0;
+            padding: 2em;
         }
+
+        &__network {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 5em 2em;
+
+            li:nth-child(3){
+                color: $--color-logo;
+            }
+        }
+
     }
 
     input {
@@ -78,10 +89,10 @@ nav {
     }  
     
     ul {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        list-style: none;
+        //display: flex;
+        //flex-flow: column nowrap;
+        //align-items: center;
+        //list-style: none;
         padding: 0;
     }
 

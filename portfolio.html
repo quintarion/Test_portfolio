@@ -16,41 +16,41 @@
 </head>
 <body>
     <div class="home">
-    <header class="header light">
-        <h1 class="header__logo">
-            <img src="../public/img/dev_logo.png" alt=""/>
-        </h1>
-        <nav>
-            <input type="checkbox" id="toggle"/>
-            <label for="toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-            </label>
-            <div class="nav">
-            <ul>
-                <li class="nav__link"><a href="index.html">Home</a></li>
-                <li class="nav__link"><a href="about.html">About</a></li>
-                <li class="nav__link nav__link--active">Portfolio</li>
-            </ul>
-            <ul>
-                <li><a href="https://github.com/quintarion" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
-                <li><a href="https://github.com/quintarion" target="_blank"><i class="fab fa-github-square"></i></span></a></li>
-                <a href="https://github.com/quintarion" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </ul>
-        </div>
-        </nav>
-
-    </header>
+        <header class="header light">
+            <h1 class="header__logo">
+                <img src="../public/img/dev_logo.png" alt=""/>
+            </h1>
+            <nav>
+                <input type="checkbox" id="toggle"/>
+                <label for="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                </label>
+                <div class="nav">
+                    <ul class="nav__topic">
+                        <li class="nav__link"><a href="index.html">Home</a></li>
+                        <li class="nav__link"><a href="about.html">About</a></li>
+                        <li class="nav__link nav_link--active">Portfolio</li>
+                    </ul>
+                    <ul class="nav__network">
+                        <li><a href="https://github.com/quintarion" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
+                        <li><a href="https://github.com/quintarion" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                        <li><a href="https://github.com/quintarion" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
  
-    <section class="portfolio" id="top_page">
+    <main class="portfolio" id="top_page">
+        <div class=portfolio__content>
         <div class="portfolio__title">
-            <h1>Portfolio</h1>
+            <h3>Portfolio</h3>
         </div>
-            <div class="portfolio__content">
+            <div class="portfolio__img">
                 <!--show 3 random portfolio posts-->
                 <figure>
-                    <img src="../public/img/wireframe.jpg" alt="" />
+                    <img src="https://placekitten.com/240/260" alt="" />
                     <figucation><strong>Quare talis improborum consensio</strong><br/>non modo excusatione amicitiae.</figucation>
                 </figure>
                 <figure>
@@ -78,19 +78,23 @@
                     <figucation><strong>Quare talis improborum consensio non modo</strong><br/>excusatione amicitiae.</figucation>
                 </figure>
             </div>
-    </section>
+        </div>
     </main>
     
     <footer class="footer">
-        <button class="btn btn--outline btn--disabled"><a href="#top_page">TOP</a></button>
+        <button class="btn btn--outline btn--disabled"><a href="#top_page"></a></button>
         <div class=footer__content>
             <p>copyright-2020</p>
                 <ul>
                     <li class="nav__link nav__link--active"><a href="#top_page">Home</a></li>
-                    <li class="nav__link"><a href="./public/page/about.html">About</a></li>
-                    <li class="nav__link"><a href="./public/page/portfolio.html">Portfolio</a></li>
+                    <li class="nav__link"><a href="about.html">About</a></li>
+                    <li class="nav__link"><a href="portfolio.html">Portfolio</a></li>
                 </ul>
-                <a href="https://github.com/quintarion" target="_blank"><i class="fab fa-github-square"></i></span></a>
+                <ul>
+                    <li><a href="https://github.com/quintarion" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
+                    <li><a href="https://github.com/quintarion" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                    <li><a href="https://github.com/quintarion" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
         </div>
     </footer>
     </div>

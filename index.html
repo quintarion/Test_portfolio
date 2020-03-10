@@ -15,40 +15,39 @@
     
     <title>Home| Front End Developer</title>
 </head>
-<body>
-    <div class="home">
-    <header class="header light">
-        <h1 class="header__logo">
-            <img src="../public/img/dev_logo.png" alt=""/>
-        </h1>
-        <nav>
-            <input type="checkbox" id="toggle"/>
-            <label for="toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-            </label>
-            <div class="nav">
-            <ul>
-                <li class="nav__link nav__link--active">Home</li>
-                <li class="nav__link"><a href="about.html">About</a></li>
-                <li class="nav__link"><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://github.com/quintarion" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
-                <li><a href="https://github.com/quintarion" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                <li><a href="https://github.com/quintarion" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-        </div>
-        </nav>
+    <body>
+        <header class="header light">
+            <h1 class="header__logo">
+                <img src="../public/img/dev_logo.png" alt=""/>
+            </h1>
+            <nav>
+                <input type="checkbox" id="toggle"/>
+                <label for="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                </label>
+                <div class="nav">
+                    <ul class="nav__topic">
+                        <li class="nav__link nav__link--active">Home</li>
+                        <li class="nav__link"><a href="about.html">About</a></li>
+                        <li class="nav__link"><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                    <ul class="nav__network">
+                        <li><a href="https://github.com/quintarion" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
+                        <li><a href="https://github.com/quintarion" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                        <li><a href="https://github.com/quintarion" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-    </header>
- 
     <main class="main" id="top_page">
     <section class="face">
         <figure class="face__picture">
             <!-- <img src="./public/img/face.png" alt="" id="top_page" class="face__img"/> -->
         </figure>
+        <div class="box"></div> <!--  box animation -->
         <div class="face__dark">
             <div class="face__desc">
                 <h2 class="face__title">Dreamer</h2>
@@ -73,40 +72,45 @@
     </section>
 
     <section class="preview">
-        <div class="preview__title">
-            <span></span><h3>Some of my latest work</h3><span></span>
-        </div>
         <div class="preview__content">
+            <div class="preview__title">
+                <h3>Some of my latest work</h3>
+            </div>
+            <div class="preview__img">
             <!--show 3 random portfolio posts-->
-            <figure>
-                <img src="../public/img/wireframe.jpg" alt="" />
-                <figucation><h4>Quare talis improborum consensio</h4><br/>non modo excusatione amicitiae.</figucation>
-            </figure>
-            <figure>
-                <img src="https://placekitten.com/240/260" alt="" />
-                <figucation><h4>Quare talis improborum consensio non modo</h4><br/>excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est,</figucation>
-            </figure>
-            <figure>
-                <img src="https://placekitten.com/240/260" alt="" />
-                <figucation><h4>Quare talis improborum consensio non modo</h4><br/>excusatione amicitiae.</figucation>
-            </figure>
+                <figure>
+                    <img src="../public/img/wireframe.jpg" alt="" />
+                    <figucation><h4>Quare talis improborum consensio</h4><br/>non modo excusatione amicitiae.</figucation>
+                </figure>
+                <figure>
+                    <img src="https://placekitten.com/240/260" alt="" />
+                    <figucation><h4>Quare talis improborum consensio non modo</h4><br/>excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est,</figucation>
+                </figure>
+                <figure>
+                    <img src="https://placekitten.com/240/260" alt="" />
+                    <figucation><h4>Quare talis improborum consensio non modo</h4><br/>excusatione amicitiae.</figucation>
+                </figure>
+            </div>
         </div>
     </section>
     </main>
     
     <footer class="footer">
-        <button class="btn btn--outline btn--disabled"><a href="#top_page">TOP</a></button>
+        <button class="btn btn--outline btn--disabled"><a href="#top_page"></a></button>
         <div class=footer__content>
             <p>copyright-2020</p>
                 <ul>
                     <li class="nav__link nav__link--active"><a href="#top_page">Home</a></li>
-                    <li class="nav__link"><a href="./public/page/about.html">About</a></li>
-                    <li class="nav__link"><a href="./public/page/portfolio.html">Portfolio</a></li>
+                    <li class="nav__link"><a href="about.html">About</a></li>
+                    <li class="nav__link"><a href="portfolio.html">Portfolio</a></li>
                 </ul>
-                <a href="https://github.com/quintarion" target="_blank"><i class="fab fa-github-square"></i></span></a>
+                <ul>
+                    <li><a href="https://github.com/quintarion" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
+                    <li><a href="https://github.com/quintarion" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                    <li><a href="https://github.com/quintarion" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
         </div>
     </footer>
-    </div>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>

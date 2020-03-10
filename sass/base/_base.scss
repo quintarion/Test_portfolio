@@ -2,7 +2,8 @@
 
 *,
 *::after,
-*::before {
+*::before
+{
     margin: 0;
     padding: 0;
     box-sizing: content-box; // Opera/IE 8+
@@ -33,7 +34,7 @@ body {
 p {
     width: 60%;
     margin: 25px auto;
-    font-size: 1.5rem;
+    font-size: 16px;
     line-height: 1.4rem;
     letter-spacing: 1px;
 }
